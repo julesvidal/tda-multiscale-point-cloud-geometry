@@ -20,10 +20,39 @@ $ ./build_and_install.sh
 ___
 ## Try it !
 
-The installation provided you with a executable named
-`ttkRipsMultiParameterSamplingCmd`, located in `install/bin`.
+### At first glance
 
-You can run this program without any parameter to get a list of available
+the installation provided you with a executable named
+`ttkRipsMultiParameterSamplingCmd`, located in `install/bin/`.
+
+The command takes as input a point cloud in the `PLY` format, or a vtk format
+(`.vtu, .vtp, ...`) and generates two outputs, each exported in a
+`vtkMultiBlockDataSet (.vtm)` format :
+- a *product persistence diagram* that summarizes the repartition and salience
+  of geometric structures present in the data at different scales
+- a set of geometric primitives extracted from the diagram
+
+By default, the command performs the analysis with a covariant plane fit, on 50 scales sampled between 0.01 and 0.1 
+(relatively to the diagonal length of the axis-aligned bounding box of the dataset).
+The analysis is performed in the space of planes (a 4D space), and provides a list of planes present in the data.
+
+An basic example of usage is provided. Just execute the `run.sh` script on the `dice` dataset provided in the `data` folder: 
+```
+$ ./run.sh data/dice.vtu
+```
+This instruction generated a `dice` folder in the `results` folder, with the outputs of the program:
+- the `dice_diagram.vtm` file contains the product persistence diagram
+- the `dice_primitives.vtm` file contains the extracted primitives
+- the `display_dice.py` python script is a ParaView state file that is provided to conveniently visualize the results:
+```
+$ cd results/dice/
+$ paraview --state=display_dice.py
+```
+
+
+### Take a deeper look
+
+into this program by running the command without any parameter to get a list of available
 options:
 
 ```
@@ -60,12 +89,9 @@ $ ./install/bin/ttkRipsMultiParameterSamplingCmd
 [CMD] [ERROR]    [-l: List available arrays (default: 0)]
 ```
 
-The command takes as input a point cloud in the `PLY` format, or a vtk format
-(`.vtu, .vtp, ...`) and generates two outputs, each exported in a
-`vtkMultiBlockDataSet (.vtm)` format :
-- a *product persistence diagram* that summarizes the repartition and salience
-  of geometric structures present in the data at different scales
-- a set of geometric primitives extracted from the diagram
+You can start by tweaking the `run.sh` example script, for instance try to change the type of fitted primitives (with the option `-fitType`), or the relative product persistence threshold (with the option `-P`).
+Try it also on the `scew.ply` dataset ! 
 
-$ ./run.sh data/dice.vtu
-```
+
+
+
