@@ -7,7 +7,7 @@ This repo blablabla
 0 - Install the required dependencies
 ```
 $ sudo apt update
-$ sudo apt install git g++ cmake libvtk9-qt-dev python3 paraview
+$ sudo apt install git g++ cmake libvtk9-qt-dev python3
 ```
 1 - Clone the repository and submodule 
 ```
@@ -17,6 +17,7 @@ $ git clone --recursive https://github.com/julesvidal/tda-multiscale-point-cloud
 ```
 $ ./build_and_install.sh
 ```
+
 ___
 ## Try it !
 
@@ -44,11 +45,13 @@ This instruction generated a `dice` folder in the `results` folder, with the out
 - the `dice_diagram.vtm` file contains the product persistence diagram
 - the `dice_primitives.vtm` file contains the extracted primitives
 - the `display_dice.pvsm` paraview state file is provided to conveniently visualize the results:
-```
-$ cd results/dice/
-$ paraview --state=display_dice.pvsm
-```
-should yield the following visualization:
+
+First download the ParaView binaries (https://www.paraview.org/download/) adapted to your OS. I tested it with version 5.13.
+Extract the archive and launch the `paraview` executable located in the `bin` folder.
+
+Then in the menu: select "File" -> "Load State" and select the `display_dice.pvsm` file.
+This should yield the following visualization:
+
 ![alt text](https://github.com/julesvidal/tda-multiscale-point-cloud-geometry/blob/master/src/dice_screen.png)
 
 ## 
