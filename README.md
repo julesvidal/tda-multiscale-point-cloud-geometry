@@ -1,6 +1,6 @@
 # Topological data analysis for the multiscale geometry processing of 3D point clouds
 
-This repo blablabla
+
 
 ---
 ## Installation (instructions for a vanilla Ubuntu 24.03 distribution)
