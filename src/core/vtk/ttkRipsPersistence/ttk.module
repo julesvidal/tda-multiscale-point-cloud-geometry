@@ -1,0 +1,13 @@
+NAME
+  ttkRipsPersistence
+SOURCES
+  ttkRipsPersistence.cpp
+HEADERS
+  ttkRipsPersistence.h
+DEPENDS
+  ripsPersistence
+  ripsTree
+  pCAnalysis
+  ttkAlgorithm
+  ttkRipsTree
+  ttkPersistenceDiagram

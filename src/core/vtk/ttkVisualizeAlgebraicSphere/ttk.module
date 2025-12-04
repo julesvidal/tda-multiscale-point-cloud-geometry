@@ -1,0 +1,9 @@
+NAME
+  ttkVisualizeAlgebraicSphere
+SOURCES
+  ttkVisualizeAlgebraicSphere.cpp
+HEADERS
+  ttkVisualizeAlgebraicSphere.h
+DEPENDS
+  visualizeAlgebraicSphere
+  ttkAlgorithm

@@ -1,0 +1,18 @@
+NAME
+  ttkRipsMultiParameterSampling
+SOURCES
+  ttkRipsMultiParameterSampling.cpp
+HEADERS
+  ttkRipsMultiParameterSampling.h
+DEPENDS
+  ripsPersistence
+  ripsTree
+  contourForestsTree
+  ftmTree
+  ftmTreePP
+  pCAnalysis
+  ripsMultiParameterSampling
+  ttkRipsTree
+  ttkRipsPersistence
+  ttkPlanarGraphLayout
+  ttkAlgorithm

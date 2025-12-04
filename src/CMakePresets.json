@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "TTK-Default",
+      "hidden": true,
+      "binaryDir": "build",
+      "generator": "Ninja",
+      "cacheVariables": {
+        "TTK_ENABLE_DOUBLE_TEMPLATING": "ON",
+        "CMAKE_BUILD_TYPE": "Release",
+        "TTK_ENABLE_CPU_OPTIMIZATION": "ON",
+        "TTK_ENABLE_KAMIKAZE": "ON",
+        "TTK_BUILD_PARAVIEW_PLUGINS": "OFF"
+      }
+    }
+  ]
+}

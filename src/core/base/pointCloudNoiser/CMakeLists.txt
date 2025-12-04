@@ -1,0 +1,9 @@
+ttk_add_base_library(pointCloudNoiser
+  SOURCES
+    PointCloudNoiser.cpp
+  HEADERS
+    PointCloudNoiser.h
+  DEPENDS
+    triangulation
+    pCAnalysis
+)
