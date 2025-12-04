@@ -7,7 +7,7 @@ This repo blablabla
 0 - Install the required dependencies
 ```
 $ sudo apt update
-$ sudo apt install git g++ cmake libvtk9-dev python3 paraview
+$ sudo apt install git g++ cmake libvtk9-qt-dev python3 paraview
 ```
 1 - Clone the repository and submodule 
 ```
@@ -43,13 +43,15 @@ $ ./run.sh data/dice.vtu
 This instruction generated a `dice` folder in the `results` folder, with the outputs of the program:
 - the `dice_diagram.vtm` file contains the product persistence diagram
 - the `dice_primitives.vtm` file contains the extracted primitives
-- the `display_dice.py` python script is a ParaView state file that is provided to conveniently visualize the results:
+- the `display_dice.pvsm` paraview state file is provided to conveniently visualize the results:
 ```
 $ cd results/dice/
-$ paraview --state=display_dice.py
+$ paraview --state=display_dice.pvsm
 ```
+should yield the following visualization:
+![alt text](https://github.com/julesvidal/tda-multiscale-point-cloud-geometry/blob/master/src/dice_screen.png)
 
-
+## 
 ### Take a deeper look
 
 into this program by running the command without any parameter to get a list of available
