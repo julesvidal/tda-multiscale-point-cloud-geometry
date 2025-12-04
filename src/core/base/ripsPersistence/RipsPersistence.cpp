@@ -13,7 +13,6 @@
 #include <algorithm>
 #include <string>
 #include <numeric>
-#include <gmpxx.h>
 
 
 using namespace ttk;
