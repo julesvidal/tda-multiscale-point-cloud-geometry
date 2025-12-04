@@ -17034,11 +17034,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLMultiBlockDataReader" id="11530" servers="1">
       <Property name="FileName" id="11530.FileName" number_of_elements="1">
-        <Element index="0" value="dice_diagram.vtm"/>
+        <Element index="0" value="NAME_diagram.vtm"/>
         <Domain name="files" id="11530.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="11530.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="dice_diagram.vtm"/>
+        <Element index="0" value="NAME_diagram.vtm"/>
       </Property>
       <Property name="TimestepValues" id="11530.TimestepValues"/>
       <Property name="CellArrayInfo" id="11530.CellArrayInfo" number_of_elements="16">
@@ -17186,11 +17186,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLMultiBlockDataReader" id="11656" servers="1">
       <Property name="FileName" id="11656.FileName" number_of_elements="1">
-        <Element index="0" value="dice_primitives.vtm"/>
+        <Element index="0" value="NAME_primitives.vtm"/>
         <Domain name="files" id="11656.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="11656.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="dice_primitives.vtm"/>
+        <Element index="0" value="NAME_primitives.vtm"/>
       </Property>
       <Property name="TimestepValues" id="11656.TimestepValues"/>
       <Property name="CellArrayInfo" id="11656.CellArrayInfo"/>

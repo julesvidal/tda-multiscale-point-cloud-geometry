@@ -13,8 +13,8 @@ echo "processing $name.$ext"
 ./install/bin/ttkRipsMultiParameterSamplingCmd -i $file -o $output_prefix -fitType 0 -P 0.5
 
 echo "creating paraview state file"
-display_file=$output_path/display_$name.py
-cp ./src/display.py $display_file
+display_file=$output_path/display_$name.pvsm
+cp ./src/display.pvsm $display_file
 
 
 sed -i "s/NAME/$name/" $display_file
